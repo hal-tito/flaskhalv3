@@ -50,9 +50,11 @@ def upload_file():
     zip_folder(folder_path, zip_path)
     
     print('File uploaded successfully.')
+    
+    return '<h1>File uploaded successfully!</h1>'
 
     # Automatically download the generated web.zip file
-    return send_file(zip_path, as_attachment=True, download_name='web.zip', mimetype='application/zip')
+#    return send_file(zip_path, as_attachment=True, download_name='web.zip', mimetype='application/zip')
 
 def change_file_extension(file_path, new_extension):
     # Check if the file exists
